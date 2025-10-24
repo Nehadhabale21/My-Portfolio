@@ -1,4 +1,4 @@
-# Neha Dhabale Portfolio
+# My Portfolio
 
 Welcome to my personal portfolio! This website showcases my skills, projects, education, certificates, and ways to contact me. It is built using modern web technologies with a focus on clean, functional design.
 
@@ -40,16 +40,27 @@ The portfolio uses a modern gradient-based theme with glowing effects for visual
 ## 📂 Project Structure
 
 portfolio/
+
 │
+
 ├── index.html # Main HTML file
+
 ├── style.css # All styling for the portfolio
+
 ├── script.js # JavaScript for header/menu interactions
+
 ├── image/ # Images for profile and projects
+
 │ ├── Photo.jpg
+
 │ ├── project1.jpg
+
 │ ├── project2.jpg
+
 │ └── project3.jpg
+
 ├── resume/ # Resume file
+
  └── Neha_Dhabale_Resume.pdf
 
  
