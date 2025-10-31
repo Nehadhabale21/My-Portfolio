@@ -51,3 +51,38 @@ navLinks.forEach(link => {
     navbar.classList.remove('active');
   });
 });
+
+
+
+
+// ====== Contact Form Mailto (Added Section) ======
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("contact-form");
+  if (!form) return; // safety check if the contact form isn't on the current page
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+      alert("⚠️ Please fill out all fields before sending.");
+      return;
+    }
+
+    const subject = encodeURIComponent("New Portfolio Message from " + name);
+    const body = encodeURIComponent(
+      `Hello Neha,\n\n` +
+      `You have a new message from your portfolio website:\n\n` +
+      `👤 Name: ${name}\n` +
+      `📧 Email: ${email}\n\n` +
+      `💬 Message:\n${message}\n\n` +
+      `Best regards,\n${name} \n${email} `
+    );
+
+    const mailtoLink = `mailto:nehadhabale2512@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+  });
+});
